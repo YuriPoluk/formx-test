@@ -94,8 +94,12 @@ export class Viewer3D {
         pointLight.castShadow = true
 
         const pointLight2 = new PointLight(0xffffff, 3)
-        pointLight2.position.set(-10, 10, 10)
+        pointLight2.position.set(-10, 10, 5)
         pointLight2.castShadow = true
+
+        const pointLight3 = new PointLight(0xffffff, 3)
+        pointLight3.position.set(-5, 10, 0)
+        pointLight3.castShadow = true
 
         const directionalLight = new DirectionalLight(0xffffff, 3)
         directionalLight.position.set(-20, 20, 20)
@@ -110,7 +114,7 @@ export class Viewer3D {
         directionalLight.shadow.camera.near = 0.1
         directionalLight.shadow.camera.far = 10
 
-        this.scene.add(ambientLight, pointLight, pointLight2, directionalLight)
+        this.scene.add(ambientLight, pointLight, pointLight2, pointLight3, directionalLight)
 
         await this.createMaterials(materials)
 
