@@ -3,7 +3,7 @@
 # Running locally
 ```npm i npm run dev```
 
-## Technical decisions
+# Technical decisions
 
 - I tried to choose different materials, not only the ones that look cool in PBR.
 - Even though displacement/height map isn't a part of the PBR workflow I use it only for PBR materials to make the switch more dramatic.  
